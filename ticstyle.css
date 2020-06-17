@@ -1,0 +1,21 @@
+h1{
+	text-align: center;
+}
+td{
+	width: 100px;
+	height: 100px;
+
+}
+.verticle{
+	border-left:2px solid red;
+	border-right: 2px solid red; 
+	background-color: red;
+}
+#horizontal{
+	border-top:2px solid blue;
+	border-bottom: 2px solid blue; 
+	background-color: blue;
+}
+table{
+	margin: auto;
+}
