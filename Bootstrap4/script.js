@@ -1,11 +1,17 @@
-var age=Number(prompt("What is your age?"));
+var todo=[];
 
-if(age<0){
-    console.log("Come back one");
-}
-else if(age%Math.sqrt(age)==0){
-    console.log("Perfect");
-}
-else{
-    console.log("Try again");
-}
+window.setTimeout(function(){
+    var input=prompt("What would you like to do?");
+    while(input!="quit"){
+        if(input==="list"){
+            console.log(todo);
+        }
+        else if(input==="new"){
+            var newToDo=prompt("Enter new To do?");
+            todo.push(newToDo);
+        }
+        //ask user again
+        input=prompt("What would you like to do?");
+    }
+    console.log("You are done!!");
+},500);
